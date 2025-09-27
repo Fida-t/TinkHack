@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: url(backgrounf.png);
+    background: url(images/backgrounf.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -180,6 +180,7 @@ body:has(section) .navbar{
     color: white;
     text-decoration: none;
 }
+
 
 
 
