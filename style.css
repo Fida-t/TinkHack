@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    background: url(images/backgrounf.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    font-family: "Montserrat",sans-serif;
+
+}
+
+
+
+header{
+    align-items: center;
+
+}
+
+
+header img{
+    margin-top: 0px;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1000;
+    align-items: center;
+    background: transparent;
+    transition: background 0.4s ease;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: white;
+    margin-right: auto;
+
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul{
+    font-size: large;
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-right: 80px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+body:has(section) .navbar{
+    background: rgba(17, 17, 17,0.9)
+}
+
+.section{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+.overview, .registration, .sponsers, .contact, .timeline{
+    padding: 180px 60px; 
+    place-items: center;
+    height: 100vh;
+}
+
+
+
+.overview-heading h2, .timeline h2, .registration h2, .sponsers h2, .contact h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.overview-text, .timeline-dates{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    text-align: justify;
+}
+
+.dates, .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    flex-wrap: wrap;
+}
+
+.dates{
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.box{
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+    text-align: justify;
+    border-radius: 15px;
+    background-color:hsla(0, 1%, 54%, 0.304);
+    flex-direction: column;
+  
+}
+
+.registration{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.registration p, .registration button{
+    font-size: 1.5rem;
+    padding: 12px 30px;
+    border-radius: 10px;
+    
+}
+
+.registration button{
+    background-color: rgba(255, 255, 255, 0.978);
+    cursor: pointer;
+}
+
+.images{
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.img{
+    padding: 10px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.282);
+    border-radius: 15px;
+}
+
+.img a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.img a:hover img{
+    transform: scale(1.1);
+}
+
+
+.contact-info a, .socials a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
